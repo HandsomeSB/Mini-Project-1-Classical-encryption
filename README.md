@@ -8,4 +8,4 @@ A program that simulates the caesar cipher and the vigenere cipher
 
 CITATIONS
 
-https://github.com/YOUR_GITHUB_ACCOUNT/REPO
+https://github.com/HandsomeSB/Mini-Project-1-Classical-encryption
