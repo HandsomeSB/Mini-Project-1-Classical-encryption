@@ -5,18 +5,15 @@ import java.io.PrintWriter;
 import edu.grinnell.csc207.util.CipherUtils;
 
 public class Cipher {
-  //https://www.geeksforgeeks.org/how-to-check-if-a-string-contains-only-lowercase-letters-in-java/
-  public static boolean containsOnlyLowercase(String str)  
+
+  public static boolean isAllLower(String str)  
   { 
-      for (char c : str.toCharArray())  
-      { 
-          // check if the character is not a lowercase letter 
-          if (!(c >= 'a' && c <= 'z'))  
+      for (int i = 0; i < str.length(); i++) { 
+          if (!(str.charAt(i) >= 'a' && str.charAt(i) <= 'z'))  
           { 
               return false; 
           } 
       } 
-      // all characters are lowercase letters 
       return true; 
   } 
 
@@ -66,7 +63,7 @@ public class Cipher {
     }
 
     for(String s : text){
-      if(!containsOnlyLowercase(s)){
+      if(!isAllLower(s)){
         System.err.println("Error: strings must be only lowercase letters");
         System.exit(1);
       }
